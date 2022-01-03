@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 50%;
+  object-fit: contain;
+}
+header {
+  margin: 5px;
+  position: sticky;
+  top: 0;
+}
+ul {
+  list-style: none;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: auto;
+}
+
+/* index box html*/
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 100px;
+  padding: 30vh 2vw 30vh 2vw;
+}
+
+[class|="image_Box"] {
+  display: grid;
+  place-content: center;
+  background-color: #ccc;
+  height: 100px;
+}
+.col h4 {
+  width: 6rem;
+}
+/* about html */
+.aboutme {
+  max-width: 100%;
+}
