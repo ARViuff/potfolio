@@ -66,3 +66,28 @@ section {
 .titlelogo img {
   padding-top: 5vh;
 }
+
+/* webshop protoype */
+.webshopgallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 1vh 2vw 1vh 2vw;
+}
+[class|="webshop_Box"] {
+  display: grid;
+  place-content: center;
+  background-color: #ccc;
+  height: 100px;
+}
+.textsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 1vh 0vw 1vh 4vw;
+}
+
+.textsection h2 {
+  padding: 10vh 20vw 20vh 10vw;
+}
