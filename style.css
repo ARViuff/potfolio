@@ -24,11 +24,10 @@ header {
   margin: 5px;
   position: sticky;
   top: 0;
-}
-ul {
-  list-style: none;
-  font-style: italic;
-  color: rgba(214, 18, 18, 0.836);
+  border-bottom-style: solid;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  background-color: gainsboro;
 }
 
 header nav ul {
@@ -40,12 +39,18 @@ header nav ul {
   padding-left: 5px;
   padding-right: 5px;
   overflow-x: auto;
+  font-style: italic;
+  color: rgba(214, 18, 18, 0.836);
 }
 
 h1 {
   padding-left: 20vw;
   padding-top: 5vh;
   color: #f70d05;
+}
+h4 {
+  color: #f70d05;
+  border-bottom-style: solid;
 }
 
 p {
@@ -78,7 +83,6 @@ section {
 }
 
 .potfolioimage {
-  object-fit: contain;
 }
 
 /* about html ------------------------------------------------*/
@@ -112,7 +116,7 @@ section {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
-  gap: 10px;
+  gap: 20px;
   padding: 1vh 2vw 1vh 2vw;
 }
 [class|="webshop_Box"] {
@@ -134,4 +138,13 @@ section {
 
 .textsection h2 {
   padding: 10vh 20vw 20vh 10vw;
+}
+
+.fullSize {
+  height: 200%;
+  width: 200%;
+  position: relative;
+  z-index: 999;
+  place-content: center;
+  display: flex;
 }
