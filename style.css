@@ -4,6 +4,20 @@
 }
 img {
   width: 100%;
+  object-fit: contain;
+}
+.thumbnail:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
+body {
+  background-color: rgba(20, 18, 18, 0.966);
 }
 
 header {
@@ -13,7 +27,10 @@ header {
 }
 ul {
   list-style: none;
+  font-style: italic;
+  color: rgba(214, 18, 18, 0.836);
 }
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -28,9 +45,18 @@ header nav ul {
 h1 {
   padding-left: 20vw;
   padding-top: 5vh;
+  color: #f70d05;
 }
 
-/* index box html*/
+p {
+  border-color: #f70d05;
+  border-radius: 2%;
+  border-style: solid;
+  background-color: gainsboro;
+  padding-left: 1rem;
+}
+
+/* index box html --------------------------------------------*/
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,11 +70,18 @@ section {
   place-content: center;
   background-color: #ccc;
   height: 100px;
+  border-color: #f70d05;
+  border-style: solid;
 }
 .col h4 {
   width: 6rem;
 }
-/* about html */
+
+.potfolioimage {
+  object-fit: contain;
+}
+
+/* about html ------------------------------------------------*/
 
 .selfie {
   width: 50%;
@@ -74,7 +107,7 @@ section {
   padding-top: 5vh;
 }
 
-/* webshop protoype */
+/* webshop html ---------------------------------------------- */
 .webshopgallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -86,7 +119,10 @@ section {
   display: grid;
   place-content: center;
   background-color: #ccc;
-  height: 100px;
+  height: 10vh;
+  width: 10vw;
+  border-color: #f70d05;
+  border-style: solid;
 }
 
 .textsection {
