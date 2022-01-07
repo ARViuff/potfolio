@@ -61,6 +61,41 @@ p {
   padding-left: 1rem;
 }
 
+.subgallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  padding: 1vh 2vw 1vh 2vw;
+}
+[class|="subgallery_Box"] {
+  display: grid;
+  place-content: center;
+  background-color: #ccc;
+  height: 10vh;
+  width: 10vw;
+  border-color: #f70d05;
+  border-style: solid;
+}
+.textsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 1vh 0vw 1vh 4vw;
+}
+
+.textsection h2 {
+  padding: 10vh 20vw 20vh 10vw;
+}
+
+.fullSize {
+  height: 200%;
+  width: 200%;
+  position: relative;
+  z-index: 999;
+  place-content: center;
+  display: flex;
+}
 /* index box html --------------------------------------------*/
 section {
   display: grid;
@@ -127,24 +162,4 @@ section {
   width: 10vw;
   border-color: #f70d05;
   border-style: solid;
-}
-
-.textsection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  padding: 1vh 0vw 1vh 4vw;
-}
-
-.textsection h2 {
-  padding: 10vh 20vw 20vh 10vw;
-}
-
-.fullSize {
-  height: 200%;
-  width: 200%;
-  position: relative;
-  z-index: 999;
-  place-content: center;
-  display: flex;
 }
